@@ -3,8 +3,10 @@ import type { NextPage } from 'next'
 const Home: NextPage = () => {
   return (
     <>
-      <div className='mx-auto flex flex-col justify-center items-center'>
-        <h1>Hello World!</h1>
+      <div className='prose prose-zinc lg:prose-xl mx-auto'>
+        <div className='grid place-items-center h-screen'>
+          <h1>Hello World!</h1>
+        </div>
       </div>
     </>
   )
