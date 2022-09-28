@@ -1,0 +1,23 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "NextJS: Debug Server-Side",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "yarn debug",
+    },
+    {
+      "name": "NextJS: Debug Client-Side",
+      "type": "firefox",
+      "request": "launch",
+      "url": "http://localhost:3000"
+    }
+  ],
+  "compounds": [
+    {
+      "name": "NextJS: Full Launch",
+      "configurations": ["NextJS: Debug Server-Side", "NextJS: Debug Client-Side"]
+    }
+  ]
+}
